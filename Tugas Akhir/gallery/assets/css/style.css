@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Colors */
+  --primary-color: #25ba74;
+  --primary-light-color: #ffd6d7;
+  --yellow-color: #fec65e;
+  --white-color: #ffffff;
+  --black-color: #323232;
+  /* Font & Typography */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 58px;
+  --h1-font-size: 45px;
+  --normal-font-size: 18px;
+  --small-font-size: 16px;
+  --smaller-font-size: 14px;
+  /* Font Weight */
+  --font-semibold: 600;
+  --font-medium: 500;
+}
+
+body {
+  font-family: var(--body-font);
+}
+/* Navbar */
+.navbar {
+  padding: 12px 0;
+  transition: all 0.5s ease;
+}
+.navbar .navbar-brand span {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+.navbar .nav-link {
+  margin-right: 39px;
+  font-weight: var(--font-medium);
+  color: var(--black-color);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--primary-color);
+}
+.navbar .nav-link .active {
+  color: var(--primary-color);
+}
+.drop-shadow {
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+/* --------------------------- */
+
+/* container */
+.hp .container {
+  margin-top: 10px;
+  padding-bottom: 4rem;
+}
+
+.hp .container .judul h2 {
+  color: #25ba74;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.hp .container .card .card-body h5 {
+  color: rgb(27, 27, 27);
+}
+
+.hp .container .card .card-body p {
+  color: rgb(134, 134, 134);
+}
+
+.hp .container .card .card-body a {
+  background-color: #25ba74;
+  border-color: #25ba74;
+  font-weight: bold;
+}
+
+.hp .container .card .card-body a:hover {
+  background-color: #61b48d;
+}
+/* --------------------------- */
+
+/* Footer */
+footer {
+  padding-top: 15px;
+  padding-bottom: 0.02px;
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.195);
+  font-weight: var(--normal-font-size);
+}
+footer span {
+  color: var(--primary-color);
+}
+
+@media (max-width: 991px) {
+  footer {
+    font-size: var(--smaller-font-size);
+  }
+}
+@media (max-width: 680px) {
+  footer {
+    font-size: 12px;
+  }
+}

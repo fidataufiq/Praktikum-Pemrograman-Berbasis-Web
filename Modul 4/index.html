@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#hitung-btn").on("click", function () {
+          var dataInput = $("#input-data").val();
+          var data = dataInput.split(",").map(Number);
+
+          var sum = data.reduce(function (a, b) {
+            return a + b;
+          }, 0);
+
+          var mean = sum / data.length;
+          $("#mean").text(mean.toFixed(2));
+
+          var max = Math.max(...data);
+          $("#max").text(max);
+
+          var min = Math.min(...data);
+          $("#min").text(min);
+
+          var mode = {};
+          var modeCount = 0;
+          var modus;
+          for (var i = 0; i < data.length; i++) {
+            if (mode[data[i]] === undefined) {
+              mode[data[i]] = 1;
+            } else {
+              mode[data[i]]++;
+            }
+            if (mode[data[i]] > modeCount) {
+              modeCount = mode[data[i]];
+              modus = data[i];
+            }
+          }
+          $("#modus").text(modus);
+
+          $("#hasil").show();
+        });
+
+        $("#reset-btn").on("click", function () {
+          $("#input-data").val("");
+          $("#mean").text("");
+          $("#max").text("");
+          $("#min").text("");
+          $("#modus").text("");
+          $("#hasil").hide();
+        });
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="calculator-box">
+      <h2>Kalkulator</h2>
+
+      <label for="input-data">Masukkan angka:</label>
+      <div>
+        <input
+          type="text"
+          id="input-data"
+          placeholder="Masukkan data dipisah ,"
+        />
+      </div>
+
+      <div class="btn">
+        <button id="hitung-btn" class="btn-1">Hitung</button>
+        <button id="reset-btn" class="btn-2">Reset</button>
+      </div>
+
+      <div>
+        <p>Mean: <span id="mean"></span></p>
+        <p>Max: <span id="max"></span></p>
+        <p>Min: <span id="min"></span></p>
+        <p>Modus: <span id="modus"></span></p>
+      </div>
+    </div>
+  </body>
+</html>

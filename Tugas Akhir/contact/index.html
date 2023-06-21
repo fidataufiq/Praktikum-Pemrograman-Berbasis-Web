@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- MailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("dO_fd2CxbOOqCBXHA");
+      })();
+    </script>
+
+    <!-- script js -->
+    <script src="assets/script/script.js"></script>
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo.svg" />
+
+    <!-- Add Drop Shadow on Scroll -->
+    <script>
+      window.addEventListener("scroll", (e) => {
+        const nav = document.querySelector(".navbar");
+        if (window.pageYOffset > 0) {
+          nav.classList.add("drop-shadow");
+        } else {
+          nav.classList.remove("drop-shadow");
+        }
+      });
+    </script>
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!-- Navbar Section Open -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.svg" class="me-3" alt="brand" />
+          <span class="text-dark">Handphone Trend</span>
+        </a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../landing-page/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../gallery/index.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tips & Trick</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="color: #25ba74"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section Close -->
+
+    <!-- Contact Box -->
+    <div class="container-contact">
+      <div class="contact-box">
+        <div class="left">
+          <h2>Handphone Tren</h2>
+          <p>
+            Untuk menyanyakan seputar Handphone silahkan tinggalkan pesan
+            memlaui form contact us berikut !
+          </p>
+        </div>
+        <div class="right" id="form">
+          <h2>Contact Us</h2>
+          <input type="text" id="fname" class="field" placeholder="Your Name" />
+          <input
+            type="text"
+            id="email"
+            class="field"
+            placeholder="Your Email"
+          />
+          <textarea id="msg" placeholder="Message" class="field"></textarea>
+          <button class="btn" id="btn" onclick="submit();">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section Open -->
+    <footer>
+      <p class="text-center">
+        Copyright &copy; 2023 | <span>Seventh Group</span>
+      </p>
+    </footer>
+    <!-- Footer Section Close -->
+  </body>
+</html>
