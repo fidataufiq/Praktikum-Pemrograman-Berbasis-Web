@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style_sidebar.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+</head>
+<body>
+    <h2>Daftar Item Produk</h2>
+    <div id="navigation">
+        <ul><li><a href="frame_isi.html"    target="aku">Home</a></li>
+            <li><a href="buku.html"         target="aku">Buku</a></li>
+            <li><a href="elektronik.html"   target="aku">Elektronik</a></li>
+            <li><a href="komputer.html"     target="aku">Laptop</a></li>
+        </ul>
+    </div>
+
+    <h2>Tambahkan Item Produk</h2>
+
+    <div id="isi">
+        <form action="">
+            <label for="id">ID Barang</label><br>
+            <input type="number" id="id" name="id"  placeholder="ID Barang">
+            <br>
+            <label for="total">Jumlah Barang</label><br>
+            <input type="number" id="total" name="jumlah">
+            <br>
+            <label for="name">Nama Barang</label><br>
+            <input type="text" id="text" name="text"><br>
+            <label for="total">Harga (dalam rupiah)</label><br>
+            <input type="number" id="total" name="jumlah">
+            
+            <p>Kondisi Barang</p>
+            <input type="radio" name="kondisi_barang" value="Baru">Baru
+            <input type="radio" name="kondisi_barang" value="Bekas">Bekas
+            <br>
+            <br>
+            <label for="kategori">Kategori Barang</label>
+            <select name="Kategori" id="kategori">
+                <option value="select">Pilih Kategori</option>
+                <option value="buku">Buku</option>
+                <option value="Elektronik">Elektronik</option>
+                <option value="komputer">Laptop</option>
+            </select>
+            <br>
+            <br>
+            <label for="keterangan">Keterangan / Catatan</label>
+            <br>
+            
+            <textarea name="keterangan" id="keterangan"cols="25" rows="5" placeholder="tambahkan keterangan."></textarea>
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">  
+        </form>
+    </div>
+</body>
+</html>

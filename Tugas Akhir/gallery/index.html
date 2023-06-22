@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="assets/css/style.css" />
+
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <!-- Boxicons -->
+      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <!-- Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!-- Add Drop Shadow on Scroll -->
+      <script>
+         window.addEventListener("scroll", (e) => {
+            const nav = document.querySelector(".navbar");
+            if (window.pageYOffset > 0) {
+               nav.classList.add("drop-shadow");
+            } else {
+               nav.classList.remove("drop-shadow");
+            }
+         });
+      </script>
+
+      <title>Gallery</title>
+      <!-- Icon -->
+      <link rel="icon" href="assets/img/logo.svg" />
+   </head>
+   <body>
+      <!-- Navbar Section Open -->
+      <nav class="navbar navbar-expand-lg sticky-top bg-white">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <img src="assets/img/logo.svg" class="me-3" alt="brand" />
+               <span class="text-dark">Handphone Trend</span>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="bx bx-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="../landing-page/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html" style="color: #25ba74">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Tips & Trick</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../contact/index.html">Contact</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Navbar Section Close -->
+
+      <div class="hp">
+         <div class="container">
+            <div class="judul">
+               <h2>Trend Bulan Ini</h2>
+               <div class="row gy-3">
+                  <!-- Card 1 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/samsung-S23-ultra.png" class="card-img-top" alt="image 1" />
+                        <div class="card-body">
+                           <h5>Samsung S23 Ultra 5G</h5>
+                           <p class="card-text">RAM 12 GB Internal 256 GB</p>
+                           <a href="/Deskripsi/spesifikasi-samsung-s23.html" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/realme-10pro-5g.png" class="card-img-top" alt="image 2" />
+                        <div class="card-body">
+                           <h5 class="card-title">Realme 10 Pro+ 5G</h5>
+                           <p class="card-text">RAM 8 GB Internal 128 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/realme-c55-nfc.png" class="card-img-top" alt="image 3" />
+                        <div class="card-body">
+                           <h5 class="card-title">Realme C55 NFC</h5>
+                           <p class="card-text">RAM 6 GB Internal 128 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/samsung-galaxy-a54-5g.png" class="card-img-top" alt="image 4" />
+                        <div class="card-body">
+                           <h5 class="card-title">Samsung Galaxy A54 5G</h5>
+                           <p class="card-text">RAM 8 GB Internal 128 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/oppo-find-n2-flip.png" class="card-img-top" alt="image 5" />
+                        <div class="card-body">
+                           <h5 class="card-title">OPPO Find N2 Flip</h5>
+                           <p class="card-text">RAM 8 GB Internal 256 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 6 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/infinix-zero-5g.png" class="card-img-top" alt="image 6" />
+                        <div class="card-body">
+                           <h5 class="card-title">Infinix Zero 5G</h5>
+                           <p class="card-text">RAM 8 GB Internal 256 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 7 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/iqoo-11-5g.png" class="card-img-top" alt="image 7" />
+                        <div class="card-body">
+                           <h5 class="card-title">iQOO 11 5G</h5>
+                           <p class="card-text">RAM 16 GB Internal 128 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Card 8 -->
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                     <div class="card">
+                        <img src="assets/img/luna-v6.png" class="card-img-top" alt="image 8" />
+                        <div class="card-body">
+                           <h5 class="card-title">Luna V6</h5>
+                           <p class="card-text">RAM 6 GB Internal 128 GB</p>
+                           <a href="#" class="btn btn-primary">Spesifikasi</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Footer Section Open -->
+      <footer>
+         <p class="text-center">Copyright &copy; 2023 | <span>Seventh Group</span></p>
+      </footer>
+      <!-- Footer Section Close -->
+   </body>
+</html>
